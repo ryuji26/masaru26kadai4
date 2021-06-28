@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIView {
 
     @IBOutlet weak var countLabel: UILabel!
-    public func render(count: Int){
+    public func render(count: Int) {
         countLabel.text = String(count)
     }
 }
-

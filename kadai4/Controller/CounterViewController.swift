@@ -31,12 +31,12 @@ class CounterViewController: UIViewController {
     }
 
     // 入力を受け付ける
-        @IBAction func OnPlusButtonTapped(_ sender: Any) {
+        @IBAction func onPlusButtonTapped(_ sender: Any) {
             // Modelに処理を依頼する
             counterModel.countUp()
         }
 
-        @IBAction func OnMinusButtonTapped(_ sender: Any) {
+        @IBAction func onClearButtonTapped(_ sender: Any) {
             counterModel.countClear()
         }
 }

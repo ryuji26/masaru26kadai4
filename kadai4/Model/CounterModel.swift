@@ -23,6 +23,6 @@ class CounterModel {
         }
     }
     // データの保持
-    func countUp(){ count += 1 }
-    func countClear(){ count = 0 }
+    func countUp() { count += 1 }
+    func countClear() { count = 0 }
 }
