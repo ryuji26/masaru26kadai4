@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 class ViewController: UIView {
-
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
     public func render(count: Int) {
         countLabel.text = String(count)
     }

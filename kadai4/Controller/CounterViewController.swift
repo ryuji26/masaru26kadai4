@@ -9,7 +9,7 @@ import UIKit
 
 class CounterViewController: UIViewController {
     // ViewとModelの参照を保持する
-    @IBOutlet var counterView: ViewController!
+    @IBOutlet private var counterView: ViewController!
     private(set) lazy var counterModel = CounterModel()
 
     override func viewDidLoad() {
@@ -31,12 +31,12 @@ class CounterViewController: UIViewController {
     }
 
     // 入力を受け付ける
-        @IBAction func onPlusButtonTapped(_ sender: Any) {
-            // Modelに処理を依頼する
-            counterModel.countUp()
-        }
+    @IBAction private func onPlusButtonTapped(_ sender: Any) {
+        // Modelに処理を依頼する
+        counterModel.countUp()
+    }
 
-        @IBAction func onClearButtonTapped(_ sender: Any) {
-            counterModel.countClear()
-        }
+    @IBAction private func onClearButtonTapped(_ sender: Any) {
+        counterModel.countClear()
+    }
 }

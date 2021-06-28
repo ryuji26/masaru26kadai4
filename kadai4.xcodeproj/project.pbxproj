@@ -15,6 +15,7 @@
 		465DC707267E150C0075732F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465DC705267E150C0075732F /* LaunchScreen.storyboard */; };
 		465DC70F267E154A0075732F /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465DC70E267E154A0075732F /* CounterModel.swift */; };
 		465DC713267E1AD20075732F /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465DC712267E1AD20075732F /* CounterViewController.swift */; };
+		4667CE612689A57700C0C549 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4667CE602689A57700C0C549 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		465DC708267E150C0075732F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465DC70E267E154A0075732F /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
 		465DC712267E1AD20075732F /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		4667CE602689A57700C0C549 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		465DC6EE267E150B0075732F = {
 			isa = PBXGroup;
 			children = (
+				4667CE602689A57700C0C549 /* .swiftlint.yml */,
 				465DC6F9267E150B0075732F /* kadai4 */,
 				465DC6F8267E150B0075732F /* Products */,
 			);
@@ -155,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4667CE612689A57700C0C549 /* .swiftlint.yml in Resources */,
 				465DC707267E150C0075732F /* LaunchScreen.storyboard in Resources */,
 				465DC704267E150C0075732F /* Assets.xcassets in Resources */,
 				465DC702267E150B0075732F /* Main.storyboard in Resources */,
@@ -180,7 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect --format\n    swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

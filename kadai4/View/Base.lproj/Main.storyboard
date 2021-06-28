@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di3-Pg-Itp">
-                                <rect key="frame" x="46" y="84" width="30" height="30"/>
+                                <rect key="frame" x="46" y="85" width="30" height="30"/>
                                 <state key="normal" title="+1"/>
                                 <connections>
                                     <action selector="OnPlusTapped:" destination="OMD-Og-XNV" eventType="touchUpInside" id="sk6-LP-ZyL"/>
@@ -25,14 +25,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BP-N3-WQL">
-                                <rect key="frame" x="31" y="143" width="60" height="30"/>
+                                <rect key="frame" x="31" y="135" width="60" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="onClearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDU-sT-hSB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fJ-j6-vkV">
-                                <rect key="frame" x="56" y="44" width="10.5" height="21"/>
+                                <rect key="frame" x="20" y="44" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,18 +41,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5BP-N3-WQL" secondAttribute="bottom" constant="689" id="3Db-HM-fud"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5BP-N3-WQL" secondAttribute="trailing" constant="323" id="8Ig-qy-lcE"/>
-                            <constraint firstItem="di3-Pg-Itp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="9jG-mb-amO"/>
-                            <constraint firstItem="5BP-N3-WQL" firstAttribute="top" secondItem="di3-Pg-Itp" secondAttribute="bottom" constant="29" id="BRF-6s-V8T"/>
-                            <constraint firstItem="1fJ-j6-vkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="Bny-0V-JRl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fJ-j6-vkV" secondAttribute="trailing" constant="347.5" id="C3w-pf-eki"/>
-                            <constraint firstItem="di3-Pg-Itp" firstAttribute="top" secondItem="1fJ-j6-vkV" secondAttribute="bottom" constant="19" id="N8o-Wq-UfW"/>
-                            <constraint firstItem="5BP-N3-WQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="OHa-ip-73g"/>
-                            <constraint firstItem="di3-Pg-Itp" firstAttribute="top" secondItem="1fJ-j6-vkV" secondAttribute="bottom" constant="19" id="jRG-BU-mga"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="di3-Pg-Itp" secondAttribute="trailing" constant="338" id="kXb-EV-ffb"/>
-                            <constraint firstItem="1fJ-j6-vkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qWF-AT-OkJ"/>
-                            <constraint firstItem="5BP-N3-WQL" firstAttribute="top" secondItem="di3-Pg-Itp" secondAttribute="bottom" constant="29" id="ro4-VK-oBd"/>
+                            <constraint firstItem="5BP-N3-WQL" firstAttribute="top" secondItem="di3-Pg-Itp" secondAttribute="bottom" constant="20" id="1Tg-nm-Jmi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5BP-N3-WQL" secondAttribute="trailing" constant="323" id="9k4-ku-Qby"/>
+                            <constraint firstItem="1fJ-j6-vkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CzZ-wC-vdK"/>
+                            <constraint firstItem="di3-Pg-Itp" firstAttribute="top" secondItem="1fJ-j6-vkV" secondAttribute="bottom" constant="20" id="DSg-ku-SXq"/>
+                            <constraint firstItem="5BP-N3-WQL" firstAttribute="top" secondItem="di3-Pg-Itp" secondAttribute="bottom" constant="20" id="HO0-2F-ipo"/>
+                            <constraint firstItem="5BP-N3-WQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="KaF-lB-XKF"/>
+                            <constraint firstItem="di3-Pg-Itp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="TjE-Q4-njS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="di3-Pg-Itp" secondAttribute="trailing" constant="338" id="TkZ-fa-Pgz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fJ-j6-vkV" secondAttribute="trailing" constant="331" id="X2D-vN-ZDJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5BP-N3-WQL" secondAttribute="bottom" constant="697" id="bU7-PR-8Ke"/>
+                            <constraint firstItem="di3-Pg-Itp" firstAttribute="top" secondItem="1fJ-j6-vkV" secondAttribute="bottom" constant="20" id="kub-BE-Llm"/>
+                            <constraint firstItem="1fJ-j6-vkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nEH-FT-WT1"/>
                         </constraints>
                         <connections>
                             <outlet property="countLabel" destination="1fJ-j6-vkV" id="WPS-IT-SyQ"/>
