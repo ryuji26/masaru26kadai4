@@ -5,15 +5,14 @@
 //  Created by 髙橋　竜治 on 2021/06/19.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIView {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var countLabel: UILabel!
+    public func render(count: Int){
+        countLabel.text = String(count)
     }
-
-
 }
 
