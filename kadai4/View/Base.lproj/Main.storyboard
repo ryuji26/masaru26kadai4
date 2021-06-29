@@ -59,7 +59,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="counterView" destination="8bC-Xf-vdC" id="li4-Xm-yve"/>
+                        <outlet property="countLabel" destination="1fJ-j6-vkV" id="coo-tE-GLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

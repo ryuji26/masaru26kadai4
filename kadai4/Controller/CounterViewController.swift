@@ -9,8 +9,8 @@ import UIKit
 
 class CounterViewController: UIViewController {
     // ViewとModelの参照を保持する
-    @IBOutlet private var counterView: ViewController!
-    private(set) lazy var counterModel = CounterModel()
+    @IBOutlet private weak var countLabel: UILabel!
+    private let counterModel = CounterModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class CounterViewController: UIViewController {
     @objc func handleCountChange(_ notification: Notification) {
         if let count = notification.object as? Int {
             // Viewに描画処理を依頼する
-            counterView.render(count: count)
+            countLabel.text = String(count)
         }
     }
 
