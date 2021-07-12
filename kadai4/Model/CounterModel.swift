@@ -13,7 +13,7 @@ class CounterModel {
     let notificationCenter = NotificationCenter()
 
     // データの保存
-    internal var count: Int = 0 {
+    var count: Int = 0 {
         didSet {
             // Modelを監視しているコントローラーに変更を通知する
             notificationCenter.post(
